@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #3c3e43;
+    color: #333;
+  }
+
+  header {
+    background: url('https://scoopempire.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-06-at-1.01.32-PM.png') no-repeat center center/cover;
+    color: white;
+    padding: 6rem 3rem;
+    text-align: center;
+    margin-top: 0;
+    z-index: 1000;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  header p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .country-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .country-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .country-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .country-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .country-card h2 {
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #f3f3f3;
+  }
+
+  footer {
+    background: #263859;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 2rem;
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - KG Hospital</title>
+</head>
+<body bgcolor="#defab" text="#003366" style="font-family: Gill Sans MT, serif;">
+    <center>
+        <h1><font color="blue">Contact Us</font></h1>
+
+        <p>KG Multi and Super Speciality Hospital</p>
+        <p>No. 5, Government Arts College Road, Coimbatore - 641 018</p>
+        <p>Coimbatore, Tamil Nadu, India</p>
+        <p>Phone: 0422 40 42 121 / 0422-2219191</p>
+        <p>Email: <a href="mailto:contact@kghospital.com">contact@kghospital.com</a></p>
+
+        <form action="send_message.php" method="post" target="_top">
+            <p>
+                <label for="name">Name </label><br />
+                <input type="text" id="name" name="name" required placeholder="Your full name" />
+            </p>
+
+            <p>
+                <label for="email">Email </label><br />
+                <input type="email" id="email" name="email" required placeholder="Your email address" />
+            </p>
+
+            <p>
+                <label for="message">Message </label><br />
+                <textarea id="message" name="message" required placeholder="Write your message here..." rows="6" cols="40"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Send Message" />
+            </p>
+        </form>
+    </center>
+</body>
+</html>

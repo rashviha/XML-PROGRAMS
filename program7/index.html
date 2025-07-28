@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xianze Intercollegiate Meet Registration</title> 
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Xianze Intercollegiate Meet Registration</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <div class="section-title">Personal Information</div>
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" required />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" required />
+        </div>
+      </div>
+
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+        <div class="form-group">
+          <label for="blood">Blood Group</label>
+          <select id="blood" name="blood" required>
+            <option value="">--Select--</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="linkedin">LinkedIn / Portfolio (optional)</label>
+      <input type="url" id="linkedin" name="linkedin" placeholder="https://..." />
+
+      <div class="section-title">College Details</div>
+
+      <label for="college">College Name</label>
+      <input type="text" id="college" name="college" required />
+
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="regid">College Registration ID / Roll No.</label>
+          <input type="text" id="regid" name="regid" required />
+        </div>
+        <div class="form-group">
+          <label for="year">Year of Study</label>
+          <select id="year" name="year" required>
+            <option value="">-- Select --</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="4th">4th Year</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="department">Department / Stream</label>
+      <input type="text" id="department" name="department" required />
+
+      <label for="idcard">Upload College ID Card</label>
+      <input type="file" id="idcard" name="idcard" accept="image/*,.pdf" required />
+
+      <div class="section-title">Event Details</div>
+
+      <label for="events">Select Events (Hold Ctrl/Cmd for multiple)</label>
+      <select id="events" name="events[]" multiple size="5" required>
+        <option value="Debate">Debate</option>
+        <option value="Quiz">Quiz</option>
+        <option value="Hackathon">Hackathon</option>
+        <option value="Football">Football</option>
+        <option value="Dance">Dance</option>
+        <option value="Drama">Drama</option>
+        <option value="Photography">Photography</option>
+        <option value="Gaming">Gaming</option>
+      </select>
+
+      <label for="tshirt">T-Shirt Size</label>
+      <select id="tshirt" name="tshirt">
+        <option value="">-- Optional --</option>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">Extra Large</option>
+      </select>
+
+      <label for="diet">Dietary Preference</label>
+      <select id="diet" name="diet">
+        <option value="">-- Select --</option>
+        <option value="Veg">Vegetarian</option>
+        <option value="Non-Veg">Non-Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+      </select>
+
+      <div class="section-title">Accommodation</div>
+
+      <div class="form-inline">
+        <div class="form-group">
+          <label>Accommodation Required?</label>
+          <label class="radio-label"><input type="radio" name="accommodation" value="Yes" required /> Yes</
+            <label><input type="radio" name="accommodation" value="No" required /> No</label>
+        </div>
+      </div>
+
+      <div class="checkbox-label">
+        <input type="checkbox" id="terms" required />
+        <label for="terms">I agree to abide by the rules and code of conduct.</label>
+      </div>
+
+      <button type="submit" class="btn">Submit Registration</button>
+    </form>
+</div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

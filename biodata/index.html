@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional Resume</title>
+  <link rel="stylesheet" href="resume.css" />
+</head>
+<body>
+  <div class="resume-container">
+    <header>
+      <div class="header-left">
+        <img src="your-photo.jpg" alt="Photo" />
+      </div>
+      <div class="header-right">
+        <h1>Jane Doe</h1>
+        <p class="title">Full Stack Software Engineer</p>
+        <p>📧 jane.doe@example.com · 📞 +91-12345-67890</p>
+        <p>🎂 Born: 15 Jan 1995 · 📍 Bangalore, India</p>
+        <p>
+          🔗 <a href="https://linkedin.com/in/janedoe" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/janedoe" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </header>
+
+    <section class="two-column">
+      <aside>
+        <h2>Education</h2>
+        <div class="item">
+          <h3>B.Tech in Computer Science</h3>
+          <p>ABC University · 2016–2020 · 88%</p>
+        </div>
+
+        <h2>Certificates</h2>
+        <ul>
+          <li>AWS Cloud Practitioner</li>
+          <li>Full Stack Web Dev - Coursera</li>
+          <li>Agile Scrum Master - Udemy</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul>
+          <li>JavaScript, Python, C++</li>
+          <li>React, Node.js, Express</li>
+          <li>SQL, MongoDB, PostgreSQL</li>
+          <li>Git, Docker, AWS</li>
+        </ul>
+
+        <h2>Languages</h2>
+        <ul>
+          <li>English (Fluent)</li>
+          <li>Hindi (Native)</li>
+          <li>Kannada (Basic)</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Photography</li>
+          <li>Reading Tech Blogs</li>
+          <li>Marathon Running</li>
+        </ul>
+      </aside>
+
+      <main>
+        <h2>Objective</h2>
+        <p>
+          Passionate software engineer with 3+ years of experience in designing and developing scalable web applications. Looking to join a dynamic team where I can contribute to impactful solutions and continue to grow professionally.
+        </p>
+
+        <h2>Profile Summary</h2>
+        <p>
+          Results‑driven engineer with expertise in modern web technologies, cloud infrastructure, and agile development. Proven track record of delivering full-stack solutions in fast-paced environments.
+        </p>
+
+        <h2>Experience</h2>
+        <div class="item">
+          <h3>Software Engineer @ XYZ Inc.</h3>
+          <p>2021–Present | Bangalore</p>
+          <ul>
+            <li>Developed a microservices-based architecture for an e-commerce platform.</li>
+            <li>Reduced API response time by 30% by optimizing backend queries.</li>
+            <li>Led a team of 4 in migrating legacy frontend to React.js.</li>
+            <li>Implemented CI/CD pipelines using GitHub Actions and Docker.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Software Developer Intern @ ABC Tech</h3>
+          <p>2019–2020 | Remote</p>
+          <ul>
+            <li>Built a dashboard tool using Flask and Chart.js to visualize system logs.</li>
+            <li>Wrote test cases and increased code coverage from 45% to 90%.</li>
+          </ul>
+        </div>
+
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Expense Tracker App:</strong> Full-stack budgeting app using React, Node.js, and MongoDB.</li>
+          <li><strong>Resume Builder:</strong> A web-based tool for generating resumes in PDF format (HTML/CSS/JS).</li>
+          <li><strong>Portfolio Website:</strong> Personal portfolio hosted on GitHub Pages with animations and blog support.</li>
+        </ul>
+
+        <h2>Achievements</h2>
+        <ul>
+          <li>🏆 Winner, National Hackathon 2019 – Built a COVID contact tracing app.</li>
+          <li>🎓 Dean's List for academic excellence – 2018–2020.</li>
+          <li>💡 Filed a provisional patent on a file compression algorithm (2023).</li>
+        </ul>
+
+        <h2>References</h2>
+        <p>Available upon request.</p>
+      </main>
+    </section>
+
+    <footer>
+      <p>Generated on: <span id="genDate"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("genDate").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
